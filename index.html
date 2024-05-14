@@ -39,6 +39,21 @@
       html {
         scroll-behavior: smooth;
       }
+      .gwap {
+        font-family: "Manrope", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 10px 24px;
+        border-radius: 50px;
+        color: #0a0a0a;
+        background-color: #ff5f1f;
+        border: 0;
+        transition: 0.4s;
+      }
+      .gwap:hover {
+        color: #ff5f1f;
+        background-color: #ffffff;
+      }
     </style>
     <title>chukwuemekaoluchukwu</title>
   </head>
@@ -348,20 +363,30 @@
           </div>
           <div class="footsoldiertwo">
             <div>
-              <p>Name</p>
-              <input class="ourinput" type="text" id="myInput" name="name" />
-            </div>
-            <div class="py-2">
-              <p>Email</p>
-              <input class="ourinput" type="text" name="name" />
-            </div>
-            <div class="py-2">
-              <p>Subject</p>
-              <input class="ourinput" type="text" name="name" />
-            </div>
-            <div class="py-2">
-              <p>Message</p>
-              <input class="ourinputm" type="text" name="name" />
+              <form action="https://formspree.io/f/mnqergpz" method="POST">
+
+                <p>First Name</p>
+                <input class="ourinput" type="text" id="myInput" name="name" />
+              </div>
+              <div class="py-2">
+                <p>Last Name</p>
+                <input class="ourinput" type="text" name="name" />
+              </div>
+              <div class="py-2">
+                <p>Email</p>
+                <input class="ourinput" type="text" name="name" />
+              </div>
+              <div class="py-2">
+                <p>Message</p>
+                <textarea
+                  class="ourinputm"
+                  name="message"
+                  id=""
+                  cols="60"
+                  rows="5"
+                ></textarea>
+                <button class="my-2 gwap" type="submit">Send</button>
+            </form>
             </div>
           </div>
         </div>
